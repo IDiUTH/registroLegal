@@ -482,6 +482,22 @@
 
     if (form) {
       form.addEventListener('submit', function(event) {
+        const policyCheckbox = document.getElementById('acceptPolicies');
+        const policyError = document.getElementById('policyError');
+
+        if (policyCheckbox && !policyCheckbox.checked) {
+          event.preventDefault();
+          if (policyError) {
+            policyError.textContent = 'Debes aceptar nuestras políticas para continuar.';
+          }
+          policyCheckbox.focus();
+          return;
+        }
+
+        if (policyError) {
+          policyError.textContent = '';
+        }
+
         // Actualizar fecha y hora justo antes de enviar
         updateDateTime();
         

@@ -301,6 +301,16 @@
                 <!-- Hidden field -->
                 <input class="form-control" type="hidden" name="FechaHoraEnvio" id="fechaHoraEnvio">
 
+                <!-- Aceptación de políticas -->
+                <div class="form-policy">
+                  <label class="policy-checkbox">
+                    <input type="checkbox" id="acceptPolicies" name="acceptPolicies" required>
+                    <span>Acepto nuestras políticas</span>
+                  </label>
+                  <a href="assets/img/Politicas.pdf" class="policy-download-button" target="_blank" rel="noopener" download="Politicas.pdf">Descargar políticas</a>
+                  <small class="error-message" id="policyError"></small>
+                </div>
+
                 <!-- Botón de envío -->
                 <div class="form-buttons">
                   <button type="submit" class="btn-submit" id="submit-button">

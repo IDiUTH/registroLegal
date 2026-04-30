@@ -1582,6 +1582,51 @@ select.form-control:focus {
    BOTONES
    ============================================ */
 
+.form-policy {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.policy-checkbox {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  color: #1f2a3d;
+  cursor: pointer;
+}
+
+.policy-checkbox input {
+  width: 1rem;
+  height: 1rem;
+  accent-color: #013088;
+}
+
+.policy-download-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem 0.95rem;
+  border-radius: 8px;
+  border: 1px solid rgba(1, 48, 136, 0.18);
+  background: white;
+  color: #013088;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.policy-download-button:hover {
+  background: #013088;
+  color: white;
+  border-color: #013088;
+}
+
 .form-buttons {
   display: flex;
   gap: 1rem;
