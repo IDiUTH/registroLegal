@@ -10,7 +10,7 @@
   var scriptURL = "https://script.google.com/macros/s/AKfycbyMUunnGsUWKmfReVhehX8NVvbFSMEnHEvlb4KgCPTDkNStWsWVfqY9emEnWlhOAFC0/exec";
 
   // ── Progreso circular ──────────────────────────────────────
-  var campos = ["name", "dni", "email", "celular", "profesion", "educacion"];
+  var campos = ["name", "dni", "email", "celular", "profesion", "educacion", "bufeteoempresa", "departamento", "cuidad"];
 
   function actualizarProgreso() {
     var llenos = campos.filter(function (id) {
@@ -95,7 +95,12 @@
       profesion:       document.getElementById("profesion").value.trim(),
       educacion:       document.getElementById("educacion").value.trim(),
       
-      fechaHora: new Date().toLocaleString()
+      fechaHora: new Date().toLocaleString(),
+
+      bufeteoempresa:  document.getElementById("bufeteoempresa").value.trim(),
+      departamento:    document.getElementById("departamento").value.trim(),
+      cuidad:          document.getElementById("cuidad").value.trim()
+
     };
 
     // Estado: enviando
