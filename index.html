@@ -223,7 +223,7 @@
                   <!-- Nombre del Buffete/Empresa -->
                   <div class="row">
                     <div class="form-group-wrapper">
-                     <label for="bufeteoempresa" class="form-label-modern">Nombre del Bufete/Empresa *</label>
+                     <label for="bufeteoempresa" class="form-label-modern">Nombre del Bufet/Empresa *</label>
                       <div class="input-group-custom">
                         <span class="input-icon"><i class="bi bi-briefcase-fill"></i></span>
                         <input type="text" name="bufeteoempresa" class="form-control-modern" id="bufeteoempresa" placeholder="Nombre del Bufete, oficina o empresa " required>
@@ -277,7 +277,23 @@
                         <small class="error-message" id="nameError"></small>
                       </div>                    
                     </div>
-                    
+                  </div>
+
+                  <div class="row"> 
+                    <label class="form-label-modern">Medio Preferido de Contacto *</label>
+                    <div class="form-group-wrapper">
+                      <div class="select-wrapper">
+                        <select class="form-control-modern select-custom" name="mediodecontacto" id="mediodecontacto" required>
+
+                          <option value="" disabled selected>Elija Un Medio de Contacto</option>
+                          <option value="Teléfono">Teléfono</option>
+                          <option value="Correo"  >Correo</option>
+                          <option value="WhatsApp">WhatsApp</option>
+
+                        </select>
+                        <i class="bi bi-chevron-down select-icon"></i>
+                      </div>
+                    </div>
                   </div>
 
                 </div>                
