@@ -97,7 +97,7 @@
       <div class="container">
         <div class="section-header" data-aos="fade-up">
           <h2 class="form-title">Formulario de LegalTech</h2>
-          <p class="form-subtitle">Se parte de LegalTech</p>
+          <p class="form-subtitle">Sé parte de LegalTech y únete a nuestra comunidad</p>
         </div>
 
         <!--div class="row registration-content"-->
@@ -147,13 +147,13 @@
                     <div class="col-md-6">
                       
                       <div class="form-group-wrapper">
-                       <label for="name" class="form-label-modern">DNI *</label>
+                       <label for="dni" class="form-label-modern">DNI/Identidad *</label>
                         <div class="input-group-custom">
                           <span class="input-icon"><i class="bi bi-credit-card-2-front-fill"></i></span>
-                          <input type="text" name="dni" class="form-control-modern" id="dni" placeholder="XXXX XXXX XXXXX" required>
+                          <input type="text" name="dni" class="form-control-modern" id="dni" placeholder="0000 0000 00000" required>
                           <div class="input-validation-icon"><i class="bi bi-check-circle-fill"></i></div>
                         </div>
-                        <small class="error-message" id="nameError"></small>
+                        <small class="error-message" id="dniError"></small>
                       </div>
                     
                     </div>                    
@@ -163,20 +163,20 @@
                   <div class="row">
                     <div class="col-md-6">
                       <div class="form-group-wrapper">
-                        <label for="celular" class="form-label-modern">Celular *</label>
+                        <label for="celular" class="form-label-modern">Teléfono Celular *</label>
                         <div class="input-group-custom">
                           <span class="input-icon"><i class="bi bi-telephone-fill"></i></span>
                           <div class="phone-prefix">+504</div>
-                          <input type="celular" name="celular" class="form-control-modern phone-input" id="celular" placeholder="XXXX-XXXX" maxlength="9" required>
+                          <input type="tel" name="celular" class="form-control-modern phone-input" id="celular" placeholder="0000-0000" maxlength="9" required>
                           <div class="input-validation-icon"><i class="bi bi-check-circle-fill"></i></div>
                         </div>
-                        <small class="phone-format-hint">Formato: XXXX-XXXX</small>
+                        <small class="phone-format-hint">Formato: 0000-0000</small>
                         <small class="error-message" id="celularError"></small>
                       </div>
                     </div>
                     <div class="col-md-6">
                       <div class="form-group-wrapper">
-                        <label for="email" class="form-label-modern">Email *</label>
+                        <label for="email" class="form-label-modern">Correo Electrónico *</label>
                         <div class="input-group-custom">
                           <span class="input-icon"><i class="bi bi-envelope-fill"></i></span>
                           <input type="email" name="email" class="form-control-modern" id="email" placeholder="tu@correo.com" required>
@@ -187,14 +187,14 @@
                     </div>
                   </div>
 
-                  <!-- Profecion y Nivel Educativo -->
+                  <!-- Profesión y Nivel Académico -->
                   <div class="row">
                     <div class="col-md-6">                      
                       <div class="form-group-wrapper">
-                       <label for="name" class="form-label-modern">Profesion *</label>
+                       <label for="profesion" class="form-label-modern">Profesión *</label>
                         <div class="input-group-custom">
                           <span class="input-icon"><i class="bi bi-briefcase-fill"></i></span>
-                          <input type="text" name="profesion" class="form-control-modern" id="profesion" placeholder="Ej: Abogado" required>
+                          <input type="text" name="profesion" class="form-control-modern" id="profesion" placeholder="Ej: Abogado(a)" required>
                           <div class="input-validation-icon"><i class="bi bi-check-circle-fill"></i></div>
                         </div>
                         <small class="error-message" id="nameError"></small>
@@ -213,17 +213,17 @@
                       </div-->                    
               
 
-                      <label class="form-label-modern">Nivel Academico *</label>
+                      <label class="form-label-modern">Nivel Académico *</label>
 
                       <div class="form-group-wrapper">
                         <div class="select-wrapper">
                           <select class="form-control-modern select-custom" name="educacion" id="educacion" required>
-                            <option value="" disabled selected>Selecciona</option>
-                            <option value="Tecnico">Tecnico</option>
-                            <option value="Tecnico Superior">Tecnico Superior</option>
+                            <option value="" disabled selected>Selecciona tu nivel</option>
+                            <option value="Tecnico">Técnico</option>
+                            <option value="Tecnico Superior">Técnico Superior</option>
                             <option value="Licenciatura">Licenciatura</option>
-                            <option value="Especialidad Profecional">Especialidad Profecional</option>
-                            <option value="Maestria">Maestria</option>
+                            <option value="Especialidad Profesional">Especialidad Profesional</option>
+                            <option value="Maestria">Maestría</option>
                             <option value="Doctorado">Doctorado</option>
                           </select>
                           <i class="bi bi-chevron-down select-icon"></i>
@@ -266,6 +266,26 @@
 
   </main><!-- End #main -->
 
+    <section class="section aliados-section" id="aliados">
+      <div class="container">
+        <div class="section-header aliados-header" data-aos="fade-up">
+          <div class="aliados-title-wrapper">
+            <span class="aliados-bullet"></span>
+            <h2 class="aliados-title"></h2>
+          </div>
+          <div class="aliados-arrow"></div>
+        </div>
+
+        <div class="aliados-logos" data-aos="fade-up">
+          <a href="#" target="_blank" class="aliado-item"><div class="aliado-card"><img src="assets/img/uth.png" alt="Logo UTH"></div></a>
+          <a href="#" target="_blank" class="aliado-item"><div class="aliado-card"><img src="assets/img/APLIED.png" alt="Logo UTH"></div></a>
+          <a href="#" target="_blank" class="aliado-item"><div class="aliado-card"><img src="assets/img/EXECUTIVE.jpg" alt="Logo UTH"></div></a>
+          <a href="#" target="_blank" class="aliado-item"><div class="aliado-card"><img src="assets/img/uth-florida.png" alt="Logo UTH"></div></a>
+        
+        </div>
+      </div>
+    </section>
+
   <!-- ======= Footer ======= -->
   <footer class="footer" role="contentinfo">
     <div class="container">
@@ -293,7 +313,7 @@
             Licensing information: https://bootstrapmade.com/license/
             Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=SoftLand
           -->
-            Designed by <a href="https://idi.hn/">I+D+i /a>
+            Designed by <a href="https://idi.hn/">I+D+i</a>
           </div>
         </div>
       </div>
