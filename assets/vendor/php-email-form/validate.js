@@ -10,7 +10,9 @@
   var scriptURL = "https://script.google.com/macros/s/AKfycbyMUunnGsUWKmfReVhehX8NVvbFSMEnHEvlb4KgCPTDkNStWsWVfqY9emEnWlhOAFC0/exec";
 
   // ── Progreso circular ──────────────────────────────────────
-  var campos = ["name", "dni", "email", "celular", "profesion", "educacion", "bufeteoempresa", "departamento", "cuidad", "mediodecontacto"];
+  //var campos = ["name", "dni", "email", "celular", "profesion", "educacion", "bufeteoempresa", "departamento", "cuidad", "mediodecontacto"];
+  var campos = ["name", "dni", "email", "celular", "bufeteoempresa", "mediodecontacto", "MedioDePago", "DiplomadoCursoTaller"];
+
 
   function actualizarProgreso() {
     var llenos = campos.filter(function (id) {
@@ -44,7 +46,7 @@
     });
   }
 
-  //
+  // Formato del DNI
   const input = document.getElementById('dni');
   input.addEventListener('input', (e) => {
   // 1. Limpiar: solo dejamos los números
@@ -92,15 +94,17 @@
       dni:             document.getElementById("dni").value.trim(),
       email:           document.getElementById("email").value.trim(),
       celular:         document.getElementById("celular").value.trim(),
-      profesion:       document.getElementById("profesion").value.trim(),
-      educacion:       document.getElementById("educacion").value.trim(),
-      
       fechaHora: new Date().toLocaleString(),
-
       bufeteoempresa:  document.getElementById("bufeteoempresa").value.trim(),
-      departamento:    document.getElementById("departamento").value.trim(),
-      cuidad:          document.getElementById("cuidad").value.trim(),
-      mediodecontacto: document.getElementById("mediodecontacto").value.trim()
+      mediodecontacto: document.getElementById("mediodecontacto").value.trim(),
+      MedioDePago: document.getElementById("MedioDePago").value.trim(),
+      DiplomadoCursoTaller: document.getElementById("DiplomadoCursoTaller").value.trim()
+
+      //departamento:    document.getElementById("departamento").value.trim(),
+      //cuidad:          document.getElementById("cuidad").value.trim(),
+      //profesion:       document.getElementById("profesion").value.trim(),
+      //educacion:       document.getElementById("educacion").value.trim(),
+
 
     };
 

@@ -149,7 +149,7 @@
                       <div class="form-group-wrapper">
                        <label for="dni" class="form-label-modern">DNI/Identidad *</label>
                         <div class="input-group-custom">
-                          <span class="input-icon"><i class="bi bi-credit-card-2-front-fill"></i></span>
+                          <span class="input-icon"><i class="bi bi-person-vcard-fill"></i></span>
                           <input type="text" name="dni" class="form-control-modern" id="dni" placeholder="0000 0000 00000" required>
                           <div class="input-validation-icon"><i class="bi bi-check-circle-fill"></i></div>
                         </div>
@@ -188,7 +188,7 @@
                   </div>
 
                   <!-- Profesión y Nivel Académico -->
-                  <div class="row">
+                  <!--div class="row">
                     <div class="col-md-6">                      
                       <div class="form-group-wrapper">
                        <label for="profesion" class="form-label-modern">Profesión *</label>
@@ -218,23 +218,23 @@
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div-->
 
                   <!-- Nombre del Buffete/Empresa -->
                   <div class="row">
                     <div class="form-group-wrapper">
-                     <label for="bufeteoempresa" class="form-label-modern">Nombre del Bufet/Empresa *</label>
+                     <label for="bufeteoempresa" class="form-label-modern">Nombre del Empresa/Bufet *</label>
                       <div class="input-group-custom">
                         <span class="input-icon"><i class="bi bi-briefcase-fill"></i></span>
-                        <input type="text" name="bufeteoempresa" class="form-control-modern" id="bufeteoempresa" placeholder="Nombre del Bufete, oficina o empresa " required>
+                        <input type="text" name="bufeteoempresa" class="form-control-modern" id="bufeteoempresa" placeholder="Nombre del  Empresa, Oficina o Bufete  " required>
                         <div class="input-validation-icon"><i class="bi bi-check-circle-fill"></i></div>
                       </div>
                       <small class="error-message" id="dniError"></small>
                     </div>
                   </div>
 
-                  <!-- Nombre del Buffete/Empresa -->
-                  <div class="row">
+                  <!-- Nombre del Departamento/Ciudad -->
+                  <!--div class="row">
                     
                     <div class="col-md-6">                      
                       <label class="form-label-modern">Departamento *</label>
@@ -277,8 +277,9 @@
                         <small class="error-message" id="nameError"></small>
                       </div>                    
                     </div>
-                  </div>
+                  </div-->
 
+                  <!-- Medio Preferido de Contacto-->
                   <div class="row"> 
                     <label class="form-label-modern">Medio Preferido de Contacto *</label>
                     <div class="form-group-wrapper">
@@ -296,7 +297,39 @@
                     </div>
                   </div>
 
-                </div>                
+                  <!--Medio de Pago-->
+                  <div class="row">
+                    <div class="form-group-wrapper">
+                     <label for="bufeteoempresa" class="form-label-modern">Medio de Pago *</label>
+                      <div class="input-group-custom">
+                        <span class="input-icon"><i class="bi bi-credit-card-2-front-fill"></i></span>
+                        <input type="text" name="MedioDePago" class="form-control-modern" id="MedioDePago" placeholder="Ingrese que metodo de pago que ira realizar " required>
+                        <div class="input-validation-icon"><i class="bi bi-check-circle-fill"></i></div>
+                      </div>
+                      <small class="error-message" id="dniError"></small>
+                    </div>
+                  </div>
+
+                  <!-- Nombre del Curso Diplomado o Taller-->
+                  <div class="row"> 
+                    <label class="form-label-modern">Nombre del Diplomado, Curso o Taller</label>
+                    <div class="form-group-wrapper">
+                      <div class="select-wrapper">
+                        <select class="form-control-modern select-custom" name="DiplomadoCursoTaller" id="DiplomadoCursoTaller" required>
+
+                          <option value="" disabled selected>Elija Un Cusor</option>
+                          <option value="Cyberseguridad y Proteccion de Datos">Cyberseguridad y Proteccion de Datos</option>
+                          <option value="ABC de LegalTech para la IA Generativa">ABC de LegalTech para la IA Generativa</option>
+
+                        </select>
+                        <i class="bi bi-chevron-down select-icon"></i>
+                      </div>
+                    </div>
+                  </div>
+
+                </div> 
+
+
 
                 <!-- Hidden field -->
                 <input class="form-control" type="hidden" name="FechaHoraEnvio" id="fechaHoraEnvio">
