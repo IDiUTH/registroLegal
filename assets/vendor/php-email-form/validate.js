@@ -11,7 +11,7 @@
 
   // ── Progreso circular ──────────────────────────────────────
   //var campos = ["name", "dni", "email", "celular", "profesion", "educacion", "bufeteoempresa", "departamento", "cuidad", "mediodecontacto"];
-  var campos = ["name", "dni", "email", "celular", "bufeteoempresa", "mediodecontacto", "MedioDePago", "DiplomadoCursoTaller"];
+  var campos = ["name", "dni", "email", "celular", "bufeteoempresa", "mediodecontacto", "MedioDePago", "DiplomadoCursoTaller", "OtroCurso"];
 
 
   function actualizarProgreso() {
@@ -98,7 +98,8 @@
       bufeteoempresa:  document.getElementById("bufeteoempresa").value.trim(),
       mediodecontacto: document.getElementById("mediodecontacto").value.trim(),
       MedioDePago: document.getElementById("MedioDePago").value.trim(),
-      DiplomadoCursoTaller: document.getElementById("DiplomadoCursoTaller").value.trim()
+      DiplomadoCursoTaller: document.getElementById("DiplomadoCursoTaller").value.trim(),
+      OtroCurso: document.getElementById("OtroCurso").value.trim()
 
       //departamento:    document.getElementById("departamento").value.trim(),
       //cuidad:          document.getElementById("cuidad").value.trim(),
